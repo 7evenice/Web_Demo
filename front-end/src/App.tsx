@@ -2,12 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import './index.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = (): JSX.Element => {
 
   return (
     <div className="App">
-      
+      <p className='text-red-300'>Hello ae</p>
     </div>
   )
 }

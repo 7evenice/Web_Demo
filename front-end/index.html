@@ -3,13 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Link CSS TailwindCSS -->
     <link rel="stylesheet" href="./css/taiwind.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>TypeScript</title>
   </head>
   <body>
-    <h1 class="text-left text-red-950 text-center">Hello cu </h1>
+    <nav>
+      <div class="nav-content flex flex-row justify-between items-center box-border  py-8 drop-shadow-[0_4px_4px_rgba(0, 0, 0, 0.25)] h-3 w-1440 gap-167 flex-none oder-0 flex-grow-0 dark:bg-slate-800">
+        <div class="left-content oder-0 flex-grow-0 flex flex-row gap-32 block row-2">
+          <div class="logo flex-none oder-0 flex flex-row items-start p-0 gap-8 w-126 h-32">
+            <div class="symbol w-50 flex-none oder-0 flex-grow-0 relative pt-8 ">
+              <img src="./public/images/logo_cry.png" class="absolute h-100% w-100%" alt="">
+              <div class="crypter flex-none oder-1 dark:text-white absolute left-20 pt-3 text-xl">Crypter</div>
+            </div>
+            <div class="divider bg-black w-0.5 h-10"></div>
+            <div class="discover dark:text-white">Discover</div>
+            <div class="how-it-work dark:text-white ">How It Work</div>
+          </div>
+        </div>
+        <div class="actions flex-none oder-0 flex-grow-0 dark:text-white row-2">
+          <div class="search">
+            <input type="text" class="form-control" placeholder="Search" aria-label="search-nav" aria-describedby="basic-addon2">
+            <div class="search-icon">
+              <i class='bx bx-search-alt-2'></i>
+            </div>
+          </div>
+          <div class="notification">
+            <i class='bx bx-bell'></i>
+            <div class="status"></div>
+          </div>
+          <div class="button">
+            <button>Upload</button>
+            <button>Connect Wallet</button>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
