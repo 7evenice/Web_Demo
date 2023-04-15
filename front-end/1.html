@@ -11,30 +11,56 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed w-100 h-12 overflow-hidden p-0 flex m-0" style="background-color: #000000;">
-        <div class="container p-0 m-0">
-          <div class="left-content flex flex-row w-130 gap-1 left-full mt-0 ">
-            <div class="logo flex flex-row items-start p-0 h-8 flex-none order-1 flex-grow-0 mt-2">
-              <div class="images w-24 h-16 flex-none order-1 flex-grow-0 "><img src="./public/images/logo_cry.png" style="width: 80%; height: 70%; float: right;" alt="hehe" ></div>
-              <div class="font-logo font-medium flex-grow-1 order-2 mt-2 gap-1 text-slate-600">
-                Crypter
-              </div>
-            </div>
-            <div class="divider inline-block bg-slate-600 w-0.5 h-7 mt-3 ml-2 mr-0 opacity-40 order-3 "></div>
-            <div class="discover font-medium text-slate-600 inline-block m-3 order-3">Discover</div>
-            <div class="discover font-medium text-slate-600 inline-block m-3 order-3">How it work</div>
-          </div>
-          <div class="actions flex flex-col justify-center">
-            <form class="form-inline ">
-              <div class="d-flex relative">
-                <input class="form-control h-8 bg-transparent" type="text" placeholder="Search" aria-label="dell có gì">
-                <i class='bx bx-search absolute right-1 top-2'></i>
-              </div>
-          </form>
+  <body class="bg-black">
+    <nav class="navbar navbar-expand-sm navbar-dark w-100 h-16 overflow-hidden p-0 flex m-0 border-b border-b-gray-700 fixed z-30" style="background-color: #000000;">
+      <div class="left-content flex flex-row w-130 gap-4 left-full mt-0 ">
+        <div class="logo flex flex-row items-start p-3 flex-none order-1 flex-grow-0 ">
+          <img src="./public/images/logo_cry.png" class="fixed top-0 w-28 h-auto left-8" alt="">
+          <div class="font-logo font-medium flex-grow-1 order-2 gap-1 ml-24 text-slate-600 cursor-pointer z-10">
+            Crypter
           </div>
         </div>
+        <div class="divider inline-block bg-slate-600 w-0.5 h-7 mt-3 ml-2 mr-0 opacity-30 order-3 "></div>
+        <div class="discover font-medium text-slate-600 inline-block m-3 order-3 cursor-pointer">Discover</div>
+        <div class="discover font-medium text-slate-600 inline-block m-3 order-3 cursor-pointer">How it work</div>
+      </div>
+      <div class="actions flex flex-row absolute right-14 gap-1">
+        <form class="form-inline ">
+          <div class="d-flex flex relative">
+            <input class="form-control h-8 bg-transparent text-white" type="text" placeholder="Search" aria-label="dell có gì">
+            <i class='bx bx-search absolute right-1 top-2 text-white' ></i>
+          </div>
+        </form>
+        <div class="bell p-3 mr-3 ml-3">
+          <i class='bx bx-bell text-2xl text-gray-400 cursor-pointer'></i>
+        </div>
+        <div class="container-upload p-3 flex   ">
+          <div class="upload p-1 rounded-2xl bg-indigo-600 m-auto cursor-pointer text-white">Upload</div>
+        </div>
+        <div class="container-upload p-3">
+          <div class="upload p-1 border border-white rounded-2xl text-white cursor-pointer">Connect Wallet</div>
+        </div>
+      </div>
     </nav>
+    <div class="container content-block flex-col pt-36">
+      <div class="title bottom-0">
+        <p class="text-center opacity-80 text-xs font-bold text-slate-600">Create, explore, & collect digital art NFTs.
+        </p>
+        <h2 class="text-center text-2xl text-white h-16 w-full font-semibold" >The new creative economy.</h2>
+      </div>
+    </div>
+    <div class="divcover flex-col">
+      <h3 class="m-24 text-2xl font-bold text-white">Discover</h3>
+      <div class="frame">
+        <div class="menu-content">
+          <button class="border rounded-xl border-slate-600 h-auto w-40 ml-24 relative flex gap-1">
+            <div class="btn text-sm font-bold text-white pr-0">Recently added</div>
+            <i class='bx bx-chevron-down-circle text-3xl text-slate-600 ml-1'></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
